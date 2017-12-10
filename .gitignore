@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# app
+/dist/app.bundle.js
+
 # testing
 /coverage
 
