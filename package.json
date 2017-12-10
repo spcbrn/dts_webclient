@@ -1,0 +1,23 @@
+{
+  "name": "dts_webclient",
+  "version": "1.0.0",
+  "description": "Static client and server for Diamond Tower Service.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spcbrn/dts_webclient.git"
+  },
+  "author": "Christopher Lemke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spcbrn/dts_webclient/issues"
+  },
+  "homepage": "https://github.com/spcbrn/dts_webclient#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
