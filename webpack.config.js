@@ -5,5 +5,30 @@ module.exports = {
   output: {
     path: path.resolve(`${__dirname}/dist`),
     filename: 'app.bundle.js'
-  }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['react', 'env']
+          }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  },
+  watchOptions: {
+    ignored: /node_modules/
+  },
+  plugins: []
 };
