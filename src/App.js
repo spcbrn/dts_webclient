@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './styles/app.css';
+import './styles/App.css';
 
 import Landing from './components/Landing';
 
@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <main id="app_main">
-        <h1>Hello.</h1>
+        <h1>Hello...</h1>
         <Landing />
       </main>
     )
